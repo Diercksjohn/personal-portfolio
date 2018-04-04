@@ -1,0 +1,14 @@
+$var: blue;
+
+body{
+    color: $var;
+    padding: 10px;
+    columns: 300px 2;
+}
+
+.box{
+    a{
+        padding: 10px;
+        color: black;
+    }
+}
