@@ -1,0 +1,12 @@
+body{
+  background-color: pink;
+  h1{
+      font-size:20px;
+      color: blue;
+
+      @mixin atSmall{
+          font-size:60px;
+          color: green;
+      }
+  }
+}

@@ -1,14 +1,5 @@
-$var: blue;
-
-body{
-    color: $var;
-    padding: 10px;
-    columns: 300px 2;
-}
-
-.box{
-    a{
-        padding: 10px;
-        color: black;
-    }
-}
+@import "normalize.css";
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";
+@import "modules/_large-hero";
