@@ -1,0 +1,50 @@
+.large-hero{
+
+  &__image{
+    display: none;
+    width: 100%;
+
+    @mixin atMedium{
+      display: block;
+    }
+  }
+
+  &__image-mobile{
+    display: block;
+    width: 100%;
+
+    @mixin atMedium{
+      display: none;
+    }
+  }
+
+  &__text-content{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+		padding-top: 88px;
+
+		@mixin atMedium{
+			padding: 320px 60px 0 0;
+		}
+	}
+
+  &__title{
+    font-family: $title-font;
+    color: white;
+    padding-top: 68px;
+    font-size: 32px;
+
+    @mixin atMedium{
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 60px 0 0 675px;
+      font-size: 48px;
+    }
+  }
+
+}

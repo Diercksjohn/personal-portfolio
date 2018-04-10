@@ -1,12 +1,13 @@
 body{
-  background-color: pink;
-  h1{
-      font-size:20px;
-      color: blue;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F4F6;
+}
 
-      @mixin atSmall{
-          font-size:60px;
-          color: green;
-      }
-  }
+img{
+  max-width: 100%;
+  position: relative;
+}
+
+* {
+	box-sizing: border-box;
 }
