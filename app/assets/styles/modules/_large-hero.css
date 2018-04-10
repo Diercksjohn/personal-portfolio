@@ -6,12 +6,14 @@
 
     @mixin atMedium{
       display: block;
+      position: relative;
     }
   }
 
   &__image-mobile{
     display: block;
     width: 100%;
+    position: relative;
 
     @mixin atMedium{
       display: none;

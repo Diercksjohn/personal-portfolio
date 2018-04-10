@@ -1,0 +1,11 @@
+.primary-nav{
+
+  &__list{
+
+    &-item{
+      text-align: right;
+    }
+
+  }
+
+}

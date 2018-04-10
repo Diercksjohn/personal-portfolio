@@ -363,13 +363,15 @@ img{
 @media (min-width: 800px){
 
 .large-hero__image{
-      display: block
+      display: block;
+      position: relative
   }
 	}
 
 .large-hero__image-mobile{
     display: block;
     width: 100%;
+    position: relative;
   }
 
 @media (min-width: 800px){
