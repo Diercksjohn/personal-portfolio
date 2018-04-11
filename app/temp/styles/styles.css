@@ -395,7 +395,8 @@ img{
 @media (min-width: 800px){
 
 .large-hero__text-content{
-			padding: 320px 60px 0 0
+			padding: 320px 60px 0 0;
+      top: 10%
 	}
 	}
 
@@ -403,7 +404,7 @@ img{
     font-family: 'ADAM.CG PRO';
     color: white;
     padding-top: 68px;
-    font-size: 32px;
+    font-size: 2.4rem;
   }
 
 @media (min-width: 800px){
@@ -413,6 +414,91 @@ img{
       text-align: center;
       margin: 0;
       padding: 60px 0 0 675px;
-      font-size: 48px
+      font-size: 3.2rem
+  }
+	}
+
+.primary-nav__list{
+    display: none;
+  }
+
+@media (min-width: 800px){
+
+.primary-nav__list{
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+      text-align: right;
+      display: block;
+      right: 1%;
+      top: 2%;
+      font-size: 1.4rem
+      /* left: 50%; */
+  }
+	}
+
+.primary-nav__list-item{
+      font-family: 'Kepler STD Display';
+      list-style-type: none;
+    }
+
+@media (min-width: 800px){
+
+.primary-nav__list-item{
+        display: inline;
+        padding-right: 55px
+    }
+	}
+
+.wrapper{
+  overflow: hidden;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-header__menu-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 5;
+  }
+
+.site-header__menu-icon__top{
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: #FFF;
+    }
+
+.site-header__menu-icon__middle{
+      /* z-index: 6; */
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: #FFF;
+    }
+
+.site-header__menu-icon__bottom{
+      /* z-index: 6; */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: #FFF;
+    }
+
+@media (min-width: 800px){
+
+.site-header__menu-icon{
+      display: none
   }
 	}

@@ -31,6 +31,7 @@
 
 		@mixin atMedium{
 			padding: 320px 60px 0 0;
+      top: 10%;
 		}
 	}
 
@@ -38,14 +39,14 @@
     font-family: $title-font;
     color: white;
     padding-top: 68px;
-    font-size: 32px;
+    font-size: 2.4rem;
 
     @mixin atMedium{
       color: #333;
       text-align: center;
       margin: 0;
       padding: 60px 0 0 675px;
-      font-size: 48px;
+      font-size: 3.2rem;
     }
   }
 

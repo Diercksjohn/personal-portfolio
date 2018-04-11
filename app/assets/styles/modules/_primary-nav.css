@@ -1,0 +1,28 @@
+.primary-nav{
+
+  &__list{
+    display: none;
+
+    @mixin atMedium{
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+      text-align: right;
+      display: block;
+      right: 1%;
+      top: 2%;
+      font-size: 1.4rem;
+      /* left: 50%; */
+    }
+
+    &-item{
+      font-family: 'Kepler STD Display';
+      list-style-type: none;
+
+      @mixin atMedium{
+        display: inline;
+        padding-right: 55px;
+      }
+    }
+  }
+}
