@@ -1,3 +1,46 @@
+/* @define-mixin mobileSmall{
+	@media (min-width: 320px){
+		@mixin-content;
+	}
+}
+
+@define-mixin mobilMedium{
+	@media (min-width: 375px){
+		@mixin-content;
+	}
+}
+
+@define-mixin mobileLarge{
+	@media (min-width: 425px){
+		@mixin-content;
+	}
+}
+
+@define-mixin tablet{
+	@media (min-width: 768px){
+		@mixin-content;
+	}
+}
+
+@define-mixin laptop{
+	@media (min-width: 1024px){
+		@mixin-content;
+	}
+}
+
+@define-mixin laptopLarge{
+	@media (min-width: 1440px){
+		@mixin-content;
+	}
+}
+
+ */
+/* uptop mixins for different phones and laptops, might use later */
+
+
+
+
+
 @define-mixin atSmall{
 	@media (min-width: 530px){
 		@mixin-content;
@@ -11,11 +54,16 @@
 }
 
 @define-mixin atLarge{
-	@media (min-width: 1010px){
+	@media (min-width: 900px){
 		@mixin-content;
 	}
 }
 
+@define-mixin atLargest{
+	@media (min-width: 1010px){
+		@mixin-content;
+	}
+}
 @define-mixin clearfix{
 	&::after{
 		content: "";

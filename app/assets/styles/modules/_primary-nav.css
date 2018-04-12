@@ -1,5 +1,5 @@
 .primary-nav{
-
+  
   &__list{
     display: none;
 
@@ -9,10 +9,18 @@
       width: 100%;
       text-align: right;
       display: block;
-      right: 1%;
-      top: 2%;
-      font-size: 1.4rem;
-      /* left: 50%; */
+      left: 3%;
+      top: 1%;
+    }
+
+    @mixin atLarge{
+      left: 3%;
+      top: 1%;
+    }
+
+    @mixin atLargest{
+      left: -3%;
+      top: 1%;
     }
 
     &-item{
@@ -22,6 +30,15 @@
       @mixin atMedium{
         display: inline;
         padding-right: 55px;
+        font-size: 1rem;
+      }
+
+      @mixin atLarge{
+        font-size: 1.2rem;
+      }
+
+      @mixin atLargest{
+        font-size: 1.4rem;
       }
     }
   }
