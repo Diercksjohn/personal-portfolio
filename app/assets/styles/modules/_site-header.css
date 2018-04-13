@@ -13,17 +13,18 @@
       top: 0;
       left: 0;
       width: 40px;
-      height: 3px;
+      height: 5px;
       background-color: #FFF;
     }
 
     &__middle{
       /* z-index: 6; */
       position: absolute;
+      margin: 22px 0 20px 0;
       top: 8px;
       left: 0;
       width: 40px;
-      height: 3px;
+      height: 5px;
       background-color: #FFF;
     }
 
@@ -33,7 +34,7 @@
       bottom: 0;
       left: 0;
       width: 40px;
-      height: 3px;
+      height: 5px;
       background-color: #FFF;
     }
 

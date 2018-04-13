@@ -1,5 +1,5 @@
 .primary-nav{
-  
+
   &__list{
     display: none;
 
@@ -9,36 +9,25 @@
       width: 100%;
       text-align: right;
       display: block;
-      left: 3%;
-      top: 1%;
-    }
-
-    @mixin atLarge{
-      left: 3%;
-      top: 1%;
-    }
-
-    @mixin atLargest{
-      left: -3%;
-      top: 1%;
+      left: 20%;
+      top: 5%;
     }
 
     &-item{
       font-family: 'Kepler STD Display';
       list-style-type: none;
+      font-size: 1rem;
 
       @mixin atMedium{
         display: inline;
-        padding-right: 55px;
-        font-size: 1rem;
+        padding-right: 70px;
+        font-size: 1.1rem;
       }
 
       @mixin atLarge{
-        font-size: 1.2rem;
-      }
 
-      @mixin atLargest{
-        font-size: 1.4rem;
+        padding-right: 70px;
+        font-size: 1.2rem;
       }
     }
   }

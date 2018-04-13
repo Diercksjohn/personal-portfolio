@@ -35,14 +35,26 @@
 }
 
  */
-/* uptop mixins for different phones and laptops, might use later */
+/* uptop mixins for different phones and laptops,  */
 
 
 
 
+
+@define-mixin atSmallest{
+	@media (min-width: 530px){
+		@mixin-content;
+	}
+}
 
 @define-mixin atSmall{
-	@media (min-width: 530px){
+	@media (min-width: 630px){
+		@mixin-content;
+	}
+}
+
+@define-mixin atSmaller{
+	@media (min-width: 760px){
 		@mixin-content;
 	}
 }
@@ -54,16 +66,19 @@
 }
 
 @define-mixin atLarge{
-	@media (min-width: 900px){
+	@media (min-width: 1010px){
 		@mixin-content;
 	}
 }
 
 @define-mixin atLargest{
-	@media (min-width: 1010px){
+	@media (min-width: 1100px){
 		@mixin-content;
 	}
 }
+
+
+
 @define-mixin clearfix{
 	&::after{
 		content: "";
