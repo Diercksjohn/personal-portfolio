@@ -1,0 +1,89 @@
+.large-hero{
+
+  &__image{
+    display: none;
+    width: 100%;
+
+    @mixin atMedium{
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__image-mobile{
+    display: block;
+    width: 100%;
+    position: relative;
+
+    @mixin atMedium{
+      display: none;
+    }
+  }
+
+  &__text-content{
+		position: absolute;
+		top: 60%;
+		transform: translateY(-50%);
+		left: 30%;
+		text-align: center;
+
+    @mixin atSmallest{
+      top: 200%;
+      left: 32%;
+    }
+
+    @mixin atSmall{
+      left: 32%;
+      font-weight: 600;
+    }
+
+    @mixin atSmaller{
+      top: 85%
+    }
+
+		@mixin atMedium{
+      top: 46%;
+      left: 68%;
+		}
+
+    @mixin atLarge{
+      top: 300px;
+      left: 70%;
+		}
+
+    @mixin atLargest{
+      top: 425px;
+      left: 70%;
+		}
+	}
+
+  &__title{
+    font-family: $title-font;
+    color: white;
+    margin-bottom: 40%;
+    font-size: 3.5rem;
+
+    @mixin atSmallest{
+      font-size: 12vw;
+      top: 45%;
+      margin-bottom: 78%;
+    }
+
+    @mixin atSmall{
+      font-size: 12vw;
+      top: 45%;
+    }
+
+    @mixin atMedium{
+      color: #333;
+      font-size: 3vw;
+      left: 26%;
+      padding-top: 30px;
+      margin-bottom: 20%;
+    }
+
+    @mixin atLarge{
+      margin-bottom: 45%;
+    }
+  }
+}
