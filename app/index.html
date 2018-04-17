@@ -51,27 +51,45 @@
       </div>
 
 
+    <div class="container">
+      <div class="row about">
+         <div class="one-half column about__description">
 
-    <h2>About</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin placerat viverra molestie.
-        Proin fermentum posuere urna, vitae pretium
-       lorem ornare in. Morbi pharetra libero a risus bibendum
-        bibendum. Nullam tempor tortor eget elementum
-        luctus. Phasellus sem tortor, venenatis in sem gravida,
-        ultricies blandit turpis. Duis sit amet urna eget lacus
-        iaculis porttitor vel id orci. Orci varius natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin placerat viverra molestie.
-        Proin fermentum posuere urna, vitae pretium
-    </p>
+           <h2>About</h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur
+               adipiscing elit. Proin placerat viverra molestie.
+               Proin fermentum posuere urna, vitae pretium
+              lorem ornare in. Morbi pharetra libero a risus bibendum
+               bibendum. Nullam tempor tortor eget elementum
+               luctus. Phasellus sem tortor, venenatis in sem gravida,
+               ultricies blandit turpis. Duis sit amet urna eget lacus
+               iaculis porttitor vel id orci. Orci varius natoque penatibus
+               et magnis dis parturient montes, nascetur ridiculus mus.
+               Lorem ipsum dolor sit amet, consectetur
+               adipiscing elit. Proin placerat viverra molestie.
+               Proin fermentum posuere urna, vitae pretium
+           </p>
 
-    <h2>Resume</h2>
+         </div>
+         <div class="one-half column about__resume">
 
-    <img src="assets/images/resume.JPG" alt="resume picture">
-    <button type="button">Download Resume</button>
+           <h2 class="about__resume_title">Resume</h2>
+
+           <img src="assets/images/resume.JPG" class="about__resume_picture" alt="resume picture">
+
+           <div class="btn">
+
+             <button type="button" class="about__resume_download">Download Resume</button>
+
+           </div>
+
+         </div>
+       </div>
+    </div>
+
+
+
 
     <h2>Skills</h2>
 
@@ -79,21 +97,69 @@
         This is where the chart will go. use something like google charts or d3.
     </p>
 
-    <h2>Portfolio</h2>
+    <div class="container">
 
-    <a href="https://diercksjohn.github.io/travel-site/"><img src="assets/images/clear-view-escapes.JPG" alt="clear view escapes"></a>
+      <h2>Portfolio</h2>
+
+      <a href="https://diercksjohn.github.io/travel-site/"><img src="assets/images/clear-view-escapes.JPG" alt="clear view escapes"></a>
+
+    </div>
 
     <p>
         google map with ajax capability
     </p>
 
-    <button type="button">Get In Touch</button>
+    <div class="btn">
+      <div class="btn__get_in_touch">
+        <button type="button">Get In Touch</button>
+      </div>
+    </div>
 
-    <a href="https://www.facebook.com/jdpivotjohn"><img src="assets/images/Facebook.jpg" alt="facebook"></a>
-    <a href="https://www.linkedin.com/in/john-diercks-b66986108/"><img src="assets/images/linked in.jpg" alt="linked in"></a>
-    <a href="https://twitter.com/JdpivotjohnJohn"><img src="assets/images/Twitter.jpg" alt="twitter"></a>
+    <!-- Trigger/Open The Modal -->
+    <button class="open-modal">Open Modal</button>
 
-    <p>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row btn">
+
+        <div class="four columns">
+
+          <div class="btn__social_media">
+            <a href="https://www.facebook.com/jdpivotjohn"><img src="assets/images/Facebook.jpg" alt="facebook"></a>
+          </div>
+
+        </div>
+        <div class="four columns">
+
+
+            <a href="https://www.linkedin.com/in/john-diercks-b66986108/"><img src="assets/images/linked in.jpg" class="btn__social_media" alt="linked in"></a>
+
+
+        </div>
+        <div class="four columns">
+
+          <div class="btn__social_media">
+            <a href="https://twitter.com/JdpivotjohnJohn"><img src="assets/images/Twitter.jpg" alt="twitter"></a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <p id="copyright">
         ©johndiercks.biz
     </p>
 

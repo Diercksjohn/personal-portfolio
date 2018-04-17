@@ -2,10 +2,20 @@ html{
   font-size: 100%;
 }
 
+#copyright{
+  text-align: center;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #F4F4F6;
   font-size: 100%;
+
+  h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 img{

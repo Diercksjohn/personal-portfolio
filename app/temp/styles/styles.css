@@ -803,11 +803,21 @@ html{
   font-size: 100%;
 }
 
+#copyright{
+  text-align: center;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #F4F4F6;
   font-size: 100%;
 }
+
+body h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 img{
   max-width: 100%;
@@ -1030,6 +1040,11 @@ img{
 	margin-right: auto;
 }
 
+.about__description{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
 .site-header__menu-icon{
     width: 20px;
     height: 20px;
@@ -1074,4 +1089,29 @@ img{
 .site-header__menu-icon{
       display: none
   }
+	}
+
+.btn{
+
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+}
+
+.btn__get_in_touch{
+    display: block;
+  }
+
+.btn__social_media{
+    display: none;
+  }
+
+@media (min-width: 800px){
+    .btn__get_in_touch{
+      display: none;
+    }
+
+    .btn__social_media{
+      display: block;
+    }
 	}
