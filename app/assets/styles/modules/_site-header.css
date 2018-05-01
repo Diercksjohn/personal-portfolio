@@ -38,16 +38,19 @@
       background-color: #FFF;
     }
 
-    &__menu-content{
-      background-color: white;
-      opacity: 1;
-      width: 100%;
-      height: 100%;
+    &__menu-icon-expanded{
+
+    }
+
+    &__menu-icon-close{
+
     }
 
     @mixin atMedium{
       display: none;
     }
   }
+
+
 
 }

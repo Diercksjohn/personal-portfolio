@@ -4,48 +4,18 @@
     text-align: center;
     font-family: 'Kepler Std Display';
     width: 100%;
-    z-index: 10;
-    position: fixed;
-    margin-left: -20px;
-    opacity: .8;
-    background-color: white;
-
-    @mixin atSmallest{
-      &__mobile{
-        width: 100%;
-        background-color: white;
-        height: 100%;
-        z-index: 10;
-      }
-    }
-
-    @mixin atMedium{
-      position: absolute;
-      z-index: 5;
-      width: 100%;
-      text-align: right;
-      display: block;
-      left: 20%;
-      top: 5%;
-    }
 
     &-item{
       font-family: 'Kepler STD Display';
       list-style-type: none;
       font-size: 3.5rem;
-      z-index: 5;
-      padding: 30px 0 30px 0;
-
 
       @mixin atMedium{
         display: inline;
-        padding-right: 70px;
         font-size: 1.1rem;
       }
 
       @mixin atLarge{
-
-        padding-right: 70px;
         font-size: 1.2rem;
       }
     }
