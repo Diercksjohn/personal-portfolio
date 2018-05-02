@@ -2,8 +2,17 @@ html{
   font-size: 100%;
 }
 
+p{
+  display: block;
+}
+
 #copyright{
   text-align: center;
+}
+
+.horizontal__row{
+    weight: 300;
+    background-color: blue;
 }
 
 body{
