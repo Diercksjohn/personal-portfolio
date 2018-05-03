@@ -14,14 +14,20 @@
       <header class="site-header">
         <!-- <div class="wrapper"> -->
 
-          <nav class="primary-nav">
-              <ul class="primary-nav__list">
-                  <li class="primary-nav__list-item">About</li>
-                  <li class="primary-nav__list-item">Skills</li>
-                  <li class="primary-nav__list-item">Portfolio</li>
-                  <li class="primary-nav__list-item">Contact</li>
-              </ul>
-          </nav>
+
+
+          <div class="site-header__menu-content">
+
+            <nav class="primary-nav">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__list-item">About</li>
+                    <li class="primary-nav__list-item">Skills</li>
+                    <li class="primary-nav__list-item">Portfolio</li>
+                    <li class="primary-nav__list-item">Contact</li>
+                </ul>
+            </nav>
+
+          </div>
 
           <div class="site-header__menu-icon">
 
@@ -50,28 +56,51 @@
 
       </div>
 
+      <hr class="horizontal__row">
+
+    <div class="container">
+      <div class="row about">
+         <div class="five columns about__wrapper">
+
+           <h2 class="about__title">About</h2>
+           <p class="about__description">
+               Lorem ipsum dolor sit amet, consectetur
+               adipiscing elit. Proin placerat viverra molestie.
+               Proin fermentum posuere urna, vitae pretium
+              lorem ornare in. Morbi pharetra libero a risus bibendum
+               bibendum. Nullam tempor tortor eget elementum
+               luctus. Phasellus sem tortor, venenatis in sem gravida,
+               ultricies blandit turpis. Duis sit amet urna eget lacus
+               iaculis porttitor vel id orci. Orci varius natoque penatibus
+               et magnis dis parturient montes, nascetur ridiculus mus.
+               Lorem ipsum dolor sit amet, consectetur
+               adipiscing elit. Proin placerat viverra molestie.
+               Proin fermentum posuere urna, vitae pretium
+           </p>
+
+         </div>
+         <!-- divider for about and resume -->
+         <div class="two columns">
+           <p></p>
+         </div>
+         <div class="five columns about__resume">
+
+           <h2 class="about__resume-title">Resume</h2>
+
+           <img src="assets/images/resume.JPG" class="about__resume-picture" alt="resume picture">
+
+           <div class="btn">
+
+             <button type="button" class="about__resume-download">Download Resume</button>
+
+           </div>
+
+         </div>
+       </div>
+    </div>
 
 
-    <h2>About</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin placerat viverra molestie.
-        Proin fermentum posuere urna, vitae pretium
-       lorem ornare in. Morbi pharetra libero a risus bibendum
-        bibendum. Nullam tempor tortor eget elementum
-        luctus. Phasellus sem tortor, venenatis in sem gravida,
-        ultricies blandit turpis. Duis sit amet urna eget lacus
-        iaculis porttitor vel id orci. Orci varius natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus.
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin placerat viverra molestie.
-        Proin fermentum posuere urna, vitae pretium
-    </p>
 
-    <h2>Resume</h2>
-
-    <img src="assets/images/resume.JPG" alt="resume picture">
-    <button type="button">Download Resume</button>
 
     <h2>Skills</h2>
 
@@ -79,24 +108,59 @@
         This is where the chart will go. use something like google charts or d3.
     </p>
 
-    <h2>Portfolio</h2>
+    <div class="container">
 
-    <a href="https://diercksjohn.github.io/travel-site/"><img src="assets/images/clear-view-escapes.JPG" alt="clear view escapes"></a>
+      <h2>Portfolio</h2>
+
+      <a href="https://diercksjohn.github.io/travel-site/"><img src="assets/images/clear-view-escapes.JPG" alt="clear view escapes"></a>
+
+    </div>
 
     <p>
         google map with ajax capability
     </p>
 
-    <button type="button">Get In Touch</button>
+    <div class="btn">
+      <div class="btn__get_in_touch">
+        <button type="button">Get In Touch</button>
+      </div>
+    </div>
 
-    <a href="https://www.facebook.com/jdpivotjohn"><img src="assets/images/Facebook.jpg" alt="facebook"></a>
-    <a href="https://www.linkedin.com/in/john-diercks-b66986108/"><img src="assets/images/linked in.jpg" alt="linked in"></a>
-    <a href="https://twitter.com/JdpivotjohnJohn"><img src="assets/images/Twitter.jpg" alt="twitter"></a>
+    <div class="container">
 
-    <p>
+      <div class="row btn">
+
+        <div class="four columns">
+
+          <div class="btn__social_media">
+            <a href="https://www.facebook.com/jdpivotjohn"><img src="assets/images/Facebook.jpg" alt="facebook"></a>
+          </div>
+
+        </div>
+        <div class="four columns">
+
+
+            <a href="https://www.linkedin.com/in/john-diercks-b66986108/"><img src="assets/images/linked in.jpg" class="btn__social_media" alt="linked in"></a>
+
+
+        </div>
+        <div class="four columns">
+
+          <div class="btn__social_media">
+            <a href="https://twitter.com/JdpivotjohnJohn"><img src="assets/images/Twitter.jpg" alt="twitter"></a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <p id="copyright">
         ©johndiercks.biz
     </p>
 
+    <script src="/temp/scripts/App.js"></script>
 
 </body>
 </html>

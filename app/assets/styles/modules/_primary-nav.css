@@ -1,32 +1,21 @@
 .primary-nav{
 
   &__list{
-    display: none;
-
-    @mixin atMedium{
-      position: absolute;
-      z-index: 5;
-      width: 100%;
-      text-align: right;
-      display: block;
-      left: 20%;
-      top: 5%;
-    }
+    text-align: center;
+    font-family: 'Kepler Std Display';
+    width: 100%;
 
     &-item{
       font-family: 'Kepler STD Display';
       list-style-type: none;
-      font-size: 1rem;
+      font-size: 3.5rem;
 
       @mixin atMedium{
         display: inline;
-        padding-right: 70px;
         font-size: 1.1rem;
       }
 
       @mixin atLarge{
-
-        padding-right: 70px;
         font-size: 1.2rem;
       }
     }

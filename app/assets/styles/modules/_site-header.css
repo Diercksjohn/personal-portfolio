@@ -38,9 +38,19 @@
       background-color: #FFF;
     }
 
+    &__menu-icon-expanded{
+
+    }
+
+    &__menu-icon-close{
+
+    }
+
     @mixin atMedium{
       display: none;
     }
   }
+
+
 
 }

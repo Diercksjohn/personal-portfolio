@@ -2,10 +2,29 @@ html{
   font-size: 100%;
 }
 
+p{
+  display: block;
+}
+
+#copyright{
+  text-align: center;
+}
+
+.horizontal__row{
+    weight: 300;
+    background-color: blue;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #F4F4F6;
   font-size: 100%;
+
+  h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 img{

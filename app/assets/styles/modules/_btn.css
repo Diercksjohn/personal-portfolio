@@ -1,0 +1,25 @@
+.btn{
+
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+  &__get_in_touch{
+    display: block;
+  }
+
+  &__social_media{
+    display: none;
+  }
+
+  @mixin atMedium{
+    &__get_in_touch{
+      display: none;
+    }
+
+    &__social_media{
+      display: block;
+    }
+
+  }
+
+}

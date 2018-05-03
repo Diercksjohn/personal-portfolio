@@ -803,11 +803,30 @@ html{
   font-size: 100%;
 }
 
+p{
+  display: block;
+}
+
+#copyright{
+  text-align: center;
+}
+
+.horizontal__row{
+    weight: 300;
+    background-color: blue;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #F4F4F6;
   font-size: 100%;
 }
+
+body h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 img{
   max-width: 100%;
@@ -983,33 +1002,21 @@ img{
 	}
 
 .primary-nav__list{
-    display: none;
+    text-align: center;
+    font-family: 'Kepler Std Display';
+    width: 100%;
   }
-
-@media (min-width: 800px){
-
-.primary-nav__list{
-      position: absolute;
-      z-index: 5;
-      width: 100%;
-      text-align: right;
-      display: block;
-      left: 20%;
-      top: 5%
-  }
-	}
 
 .primary-nav__list-item{
       font-family: 'Kepler STD Display';
       list-style-type: none;
-      font-size: 1rem;
+      font-size: 3.5rem;
     }
 
 @media (min-width: 800px){
 
 .primary-nav__list-item{
         display: inline;
-        padding-right: 70px;
         font-size: 1.1rem
     }
 	}
@@ -1017,8 +1024,6 @@ img{
 @media (min-width: 1010px){
 
 .primary-nav__list-item{
-
-        padding-right: 70px;
         font-size: 1.2rem
     }
 	}
@@ -1029,6 +1034,44 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.about__wrapper{
+    margin-top: 5px;
+    display: block;
+  }
+
+.about__title{
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-weight: 300;
+  }
+
+.about__description{
+    font-size: 1rem;
+    font-family: 'Roboto';
+    line-height: 1.6;
+  }
+
+.about__resume-title{
+      margin-bottom: 40px;
+      text-decoration: underline;
+      font-weight: 300;
+    }
+
+.about__resume-picture{
+      border: solid black;
+      border-width: thin;
+      box-shadow: 5px 10px 8px #888888;
+      height: 400px;
+      width: 300px;
+      margin-left: 20px
+    }
+
+/* use animate or transition to make button change colors when hovered */
+
+.about__resume-download{
+
+    }
 
 .site-header__menu-icon{
     width: 20px;
@@ -1069,9 +1112,42 @@ img{
       background-color: #FFF;
     }
 
+.site-header__menu-icon__menu-icon-expanded{
+
+    }
+
+.site-header__menu-icon__menu-icon-close{
+
+    }
+
 @media (min-width: 800px){
 
 .site-header__menu-icon{
       display: none
   }
+	}
+
+.btn{
+
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+}
+
+.btn__get_in_touch{
+    display: block;
+  }
+
+.btn__social_media{
+    display: none;
+  }
+
+@media (min-width: 800px){
+    .btn__get_in_touch{
+      display: none;
+    }
+
+    .btn__social_media{
+      display: block;
+    }
 	}

@@ -1,1 +1,42 @@
+.about{
 
+  &__wrapper{
+    margin-top: 5px;
+    display: block;
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-weight: 300;
+  }
+
+  &__description{
+    font-size: 1rem;
+    font-family: 'Roboto';
+    line-height: 1.6;
+  }
+
+  &__resume{
+
+    &-title{
+      margin-bottom: 40px;
+      text-decoration: underline;
+      font-weight: 300;
+    }
+
+    &-picture{
+      border: solid black;
+      border-width: thin;
+      box-shadow: 5px 10px 8px #888888;
+      height: 400px;
+      width: 300px;
+      margin-left: 20px
+    }
+
+    /* use animate or transition to make button change colors when hovered */
+    &-download{
+
+    }
+  }
+}
