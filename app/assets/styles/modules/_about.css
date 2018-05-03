@@ -29,6 +29,9 @@
       border: solid black;
       border-width: thin;
       box-shadow: 5px 10px 8px #888888;
+      height: 400px;
+      width: 300px;
+      margin-left: 20px
     }
 
     /* use animate or transition to make button change colors when hovered */
