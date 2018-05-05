@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>John Diercks Portfolio</title>
     <link rel="stylesheet" href="temp/styles/styles.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 </head>
 <body>
 
@@ -104,9 +106,7 @@
 
     <h2>Skills</h2>
 
-    <p>
-        This is where the chart will go. use something like google charts or d3.
-    </p>
+    <div class="ct-chart ct-golden-section"></div>
 
     <div class="container">
 
@@ -161,6 +161,36 @@
     </p>
 
     <script src="/temp/scripts/App.js"></script>
+    <script type="text/javascript">
+    var data = {
+      labels: ['HTML', 'CSS/Sass', 'Javascript', 'PHP', 'Gulp', 'Pool'],
+      series: [
+        [4.3, 3.9, 3.5, 2.9, 3.3, 5]
+      ]
+    };
+
+    var yLabels = [
+    '',
+    'Learning',
+    'Needs work',
+    'I am pretty good',
+    'Better than average',
+    'I am God'
+    ];
+
+    var options = {
+      chartPadding:30,
+      axisY: {
+        onlyInteger: true,
+        labelInterpolationFnc: function(value, index) {
+          return yLabels[index];
+        },
+        stretch: true
+      }
+    };
+
+    new Chartist.Bar('.ct-chart', data, options);
+    </script>
 
 </body>
 </html>
