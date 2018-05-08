@@ -8,5 +8,6 @@
 @import "modules/_wrapper";
 @import "modules/_about";
 @import "modules/_site-header";
-@import "modules/_btn.css";
-@import "modules/_modal.css";
+@import "modules/_btn";
+@import "modules/_modal";
+@import "modules/_chart";
