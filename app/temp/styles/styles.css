@@ -1001,8 +1001,23 @@ img{
   }
 	}
 
+.navigation_container{
+  position: absolute;
+  z-index: 15;
+  background-color: black;
+  opacity: .5;
+  min-width: 100%;
+  height: 10%;
+}
+
+.primary-nav{
+
+  text-align: right;
+  word-spacing: 70px;
+  margin: 20px 30px 0 0;
+}
+
 .primary-nav__list{
-    text-align: center;
     font-family: 'Kepler Std Display';
     width: 100%;
   }
@@ -1011,13 +1026,15 @@ img{
       font-family: 'Kepler STD Display';
       list-style-type: none;
       font-size: 3.5rem;
+      opacity: 1;
     }
 
 @media (min-width: 800px){
 
 .primary-nav__list-item{
         display: inline;
-        font-size: 1.1rem
+        font-size: 1.1rem;
+        color: white
     }
 	}
 
@@ -1029,11 +1046,65 @@ img{
 	}
 
 .wrapper{
-  overflow: hidden;
+	overflow: hidden;
 	max-width: 1236px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.wrapper--medium{
+		max-width: 976px;
+	}
+
+.wrapper--narrow{
+		max-width: 470px;
+	}
+
+.wrapper--no-padding-until-medium{
+
+		padding-left: 0;
+		padding-right:0;
+	}
+
+@media (min-width: 800px){
+
+.wrapper--no-padding-until-medium{
+			padding-left: 18px;
+			padding-right: 18px
+	}
+	}
+
+.wrapper--no-padding-until-large{
+
+		padding-left: 0;
+		padding-right:0;
+	}
+
+@media (min-width: 1010px){
+
+.wrapper--no-padding-until-large{
+			padding-left: 18px;
+			padding-right: 18px
+	}
+	}
+
+.wrapper .wrapper{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.wrapper--b-margin{
+		margin-bottom: 1rem;
+
+	}
+
+@media (min-width: 630px){
+
+.wrapper--b-margin{
+			margin-bottom: 3.875rem
+
+	}
+	}
 
 .about__wrapper{
     margin-top: 5px;
@@ -1072,6 +1143,13 @@ img{
 .about__resume-download{
 
     }
+
+.site-header{
+width: 100%;
+
+
+
+}
 
 .site-header__menu-icon{
     width: 20px;
