@@ -1014,7 +1014,7 @@ img{
 
   text-align: right;
   word-spacing: 70px;
-  margin: 20px 30px 0 0;
+  margin: 30px 30px 0 0;
 }
 
 .primary-nav__list{
@@ -1127,21 +1127,22 @@ img{
       margin-bottom: 40px;
       text-decoration: underline;
       font-weight: 300;
+      text-align: center;
     }
 
 .about__resume-picture{
-      border: solid black;
-      border-width: thin;
       box-shadow: 5px 10px 8px #888888;
       height: 400px;
       width: 300px;
-      margin-left: 20px
+      margin-left: 20px;
+      padding-left: 20px;
     }
 
 /* use animate or transition to make button change colors when hovered */
 
-.about__resume-download{
-
+.about__resume-download:hover{
+      color: white;
+      background-color: black;
     }
 
 .site-header{
@@ -1241,3 +1242,7 @@ width: 100%;
   /* Maybe you like round corners on your bars? */
 
 }
+
+.portfolio-title{
+    text-decoration: underline;
+  }

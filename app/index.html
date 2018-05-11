@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>John Diercks Portfolio</title>
     <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- Might change the skills chart to chartist later on -->
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> -->
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -92,8 +90,9 @@
          <div class="five columns about__resume">
 
            <h2 class="about__resume-title">Resume</h2>
-
-           <img src="assets/images/resume.JPG" class="about__resume-picture" alt="resume picture">
+          <div data-aos="flip-left" data-aos-delay="100">
+            <img src="assets/images/resume.JPG" class="about__resume-picture" alt="resume picture">
+          </div>
 
            <div class="btn">
 
@@ -106,16 +105,9 @@
     </div>
 
 
-
-
-    <!-- <h2>Skills</h2> -->
-
-    <!--Div that will hold the pie chart-->
-    <!-- <div id="skills_chart"></div> -->
-
     <div class="container">
 
-      <h2>Portfolio</h2>
+      <h2 class="portfolio-title">Portfolio</h2>
 
       <a href="https://diercksjohn.github.io/travel-site/"><img src="assets/images/clear-view-escapes.JPG" alt="clear view escapes"></a>
 
@@ -167,68 +159,12 @@
 
     <script src="/temp/scripts/App.js"></script>
     <script type="text/javascript">
-    // var data = {
-    //   labels: ['HTML', 'CSS/Sass', 'Javascript', 'PHP', 'Gulp', 'Pool'],
-    //   series: [
-    //     [4.3, 3.9, 3.5, 2.9, 3.3, 5]
-    //   ]
-    // };
-    //
-    // var yLabels = [
-    // '',
-    // 'Learning',
-    // 'Needs work',
-    // 'I am pretty good',
-    // 'Better than average',
-    // 'I am God'
-    // ];
-    //
-    // var options = {
-    //   chartPadding:30,
-    //   axisY: {
-    //     onlyInteger: true,
-    //     labelInterpolationFnc: function(value, index) {
-    //       return yLabels[index];
-    //     },
-    //     stretch: true
-    //   }
-    // };
-    //
-    // new Chartist.Bar('.ct-chart', data, options);
-
-    google.charts.load('current', {packages: ['corechart', 'bar']});
-    google.charts.setOnLoadCallback(dataAnnotations);
-
-    function dataAnnotations() {
-          var data = google.visualization.arrayToDataTable([
-            ['City', '2010 Population', '2000 Population'],
-            ['New York City, NY', 8175000, 8008000],
-            ['Los Angeles, CA', 3792000, 3694000],
-            ['Chicago, IL', 2695000, 2896000],
-            ['Houston, TX', 2099000, 1953000],
-            ['Philadelphia, PA', 1526000, 1517000]
-          ]);
-
-          var options = {
-            title: 'Population of Largest U.S. Cities',
-            chartArea: {width: '50%'},
-            hAxis: {
-              title: 'Total Population',
-              minValue: 0
-            },
-            vAxis: {
-              title: 'City',
-              ticks: [16, {v:32, f:'thirty two'}, {v:64, f:'sixty four'}, 128]
-            }
-          };
-
-          var chart = new google.visualization.BarChart(document.getElementById('skills_chart'));
-          chart.draw(data, options);
-        }
-
-        $(window).resize(function(){
-      	  	drawMultSeries();
-      	});
+    AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-sine',
+  delay: 100,
+});
     </script>
 
 </body>

@@ -1,0 +1,7 @@
+.portfolio{
+
+  &-title{
+    text-decoration: underline;
+  }
+
+}
