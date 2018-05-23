@@ -1,2 +1,8 @@
-@import "normalize.css";
-@import "base/_global";
+@import url(normalize.css);
+h1 {
+  color: red;
+  background-color: yellow; }
+  h1 .blue {
+    color: blue; }
+
+/*# sourceMappingURL=styles.css.map */
