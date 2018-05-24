@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css">
 
+  <script type='text/javascript' src=".././node_modules/jquery/dist/jquery.js"></script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -24,11 +26,16 @@
     <row class="bg-color-red-200 flex-4"><span class="flex-4">Heading 1</span></row>
   </section>
 
-  
-  <script src="js/scripts.js"></script>
-  <script type="text/javascript">
+  <p>I should disapear</p>
+
+  <script type='text/javascript'>
+
+  $(document).ready(function(){
+      $("p").click(function(){
+          $(this).hide();
+      });
+  });
 
   </script>
-  <script src="../index.js"></script>
 </body>
 </html>

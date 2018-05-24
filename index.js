@@ -1,3 +1,2 @@
-var $ = require('jquery');
-
-module.exports = $;
+// this is equivalent to the standard node require:
+//used for dev-depende
