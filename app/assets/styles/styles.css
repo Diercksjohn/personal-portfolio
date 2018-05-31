@@ -1,8 +1,16 @@
-@import url(normalize.css);
 h1 {
-  color: red;
-  background-color: yellow; }
-  h1 .blue {
-    color: blue; }
+  font-family: 'Raleway'; }
+
+h2 {
+  font-family: 'Raleway'; }
+
+.about {
+  background-color: white; }
+
+.skills {
+  background-color: green; }
+
+.contact {
+  background-color: grey; }
 
 /*# sourceMappingURL=styles.css.map */

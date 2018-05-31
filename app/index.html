@@ -9,8 +9,9 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="assets/styles/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href=".././node_modules/bulma/css/bulma.css">
+  <link rel="stylesheet" href=".././node_modules/normalize.css/normalize.css">
   <script type='text/javascript' src=".././node_modules/jquery/dist/jquery.js"></script>
 
   <!--[if lt IE 9]>
@@ -20,14 +21,75 @@
 
 <body>
 
-  <section class="grid-flex">
-    <row class="bg-color-red-100 flex-4"><h1 class="flex-2">my <span class="blue">this is blue</span>ame is n</h1></row>
-    <row class="bg-color-red-150 flex-4"><h1 class="flex-4">Heading 1</h1></row>
-    <row class="bg-color-red-200 flex-4"><span class="flex-4">Heading 1</span></row>
+
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+
+  <div class="navbar-menu navbar-end" id="navMenu">
+    <a class="navbar-item">
+      Home
+    </a>
+    <a class="navbar-item">
+      About
+    </a>
+    <a class="navbar-item">
+      Skills
+    </a>
+    <a class="navbar-item">
+      Contact
+    </a>
+  </div>
+
+
+  <section class="hero is-primary is-fullheight">
+
+    <div class="hero-body">
+
+      <div class="container has-text-centered">
+        <h1 class="title is-1">
+          Hello I am John Diercks
+        </h1>
+        <h2 class="subtitle is-3">
+          Web Developer
+        </h2>
+      </div>
+    </div>
   </section>
 
-  <p>I should disapear</p>
+<!-- About section -->
+  <section class="section about is-large">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+    </div>
+  </section>
 
+<!-- Skills section -->
+  <section class="section skills is-large">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+  <section class="section contact is-large">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="/assets/scripts/App.js"></script>
   <script type='text/javascript'>
 
   $(document).ready(function(){
@@ -35,6 +97,34 @@
           $(this).hide();
       });
   });
+
+  //Javascript Navagation from Bulma
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+
 
   </script>
 </body>
