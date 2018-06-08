@@ -7,10 +7,22 @@ h2 {
 .about {
   background-color: white; }
 
-.skills {
-  background-color: green; }
+img {
+  text-align: center; }
 
-.contact {
-  background-color: grey; }
+.projects-section {
+  text-align: center; }
+
+#portfolio {
+  border: solid black; }
+
+#about {
+  border: solid black; }
+
+.about .about_text-title {
+  color: green; }
+.about .about_text-description {
+  color: blue;
+  padding: 30px 0 30px 0; }
 
 /*# sourceMappingURL=styles.css.map */
