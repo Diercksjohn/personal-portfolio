@@ -7,11 +7,12 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href=".././node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href=".././node_modules/bulma/css/bulma.css">
-  <link rel="stylesheet" href=".././node_modules/normalize.css/normalize.css">
   <script type='text/javascript' src=".././node_modules/jquery/dist/jquery.js"></script>
 
   <!--[if lt IE 9]>
@@ -21,121 +22,129 @@
 
 <body>
 
-
+  <!-- Hamburger menu -->
   <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
   </a>
 
-  <div class="navbar-menu navbar-end" id="navMenu">
-    <a class="navbar-item" id="home">
-      Home
-    </a>
-    <a class="navbar-item" id="about">
-      About
-    </a>
-    <a class="navbar-item" id="portfolio">
-      Portfolio
-    </a>
-    <!-- might make a contact form page later -->
-    <!-- <a class="navbar-item" id="contact">
-      Contact
-    </a> -->
-  </div>
+    <!-- beginning of start page and hero image section -->
+    <section class="hero is-large has-bg-img"> 
+
+      <!-- start of navigation top right -->
+      <nav class="navbar is-fixed-top">
+        <div class="navbar-menu navbar-end navbar_custom" id="navMenu">
+          <a  href="#about" class="navbar-item navbar_custom_about" >
+            About
+          </a>
+          <a href="#portfolio" class="navbar-item navbar_custom_portfolio">
+            Portfolio
+          </a>
+          <a href="#contact" class="navbar-item navbar_custom_contact">
+            Contact
+          </a>
+        </div>
+      </nav>
+      <!-- end of navigation top right -->
+
+      <div class="hero-body"> 
+        <div class="container has-text-centered"> 
+          <h1 class="title is-1">Hello I am John Diercks</h1> 
+          <h2 class="subtitle is-3">Web Developer</h2> 
+        </div> 
+      </div> 
+    </section>
+    <!-- end of start page and hero image section -->
 
 
-  <section class="hero is-primary is-fullheight">
-
-    <div class="hero-body">
-
-      <div class="container has-text-centered">
-        <h1 class="title is-1">
-          Hello I am John Diercks
-        </h1>
-        <h2 class="subtitle is-3">
-          Web Developer
+    <!-- Main container for the about and portfolio sections -->
+  <div class="container">
+  <!-- About section -->
+    <section class="section about is-medium" id="about">
+      <div class="container about">
+        <h1 class="title has-text-centered about_text-title">About Me</h1>
+        
+        <h2 class="subtitle has-text-centered about_text-description">
+          Bicycle rights irony actually neutra typewriter lyft. 
+          Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. 
+          Occupy bitters pour-over snackwave you probably haven't heard of them small batch. 
+          Cornhole mustache man bun letterpress echo park VHS.
         </h2>
-      </div>
-    </div>
-  </section>
 
-<!-- About section -->
-  <section class="section about is-medium" id="about">
-    <div class="container about">
-      <h1 class="title has-text-centered about_text-title">About Me</h1>
-      
-      <h2 class="subtitle has-text-centered about_text-description">
-        Bicycle rights irony actually neutra typewriter lyft. 
-        Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. 
-        Occupy bitters pour-over snackwave you probably haven't heard of them small batch. 
-        Cornhole mustache man bun letterpress echo park VHS.
-      </h2>
-
-      <!-- general skills area -->
-      <div class="columns">
-        <div class="column">
-          <h1 class="title has-text-centered">Design</h1>
-          <img src="assets/images/husky.jpg" alt="design" width="350px" height="350px">
-          <div class="has-text-centered about_text-description">
-            <p>
-              Mumblecore hexagon kombucha, pitchfork four 
-              loko raclette intelligentsia
-              master cleanse. Vinyl XOXO lumbersexual
-            </p>
+        <!-- general skills area -->
+        <div class="columns">
+          <div class="column">
+            <h1 class="title has-text-centered about_text-title">Design</h1>
+            <img src="assets/images/husky.jpg" alt="design" width="250px" height="250px">
+            <div class="has-text-centered about_text-description">
+              <p class="about_text-description">
+                Mumblecore hexagon kombucha, pitchfork four 
+                loko raclette intelligentsia
+                master cleanse. Vinyl XOXO lumbersexual
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <h1 class="title has-text-centered about_text-title">Code</h1>
+            <img src="assets/images/husky.jpg" alt="code" width="250px" height="250px">
+            <div class="has-text-centered about_text-description">
+              <p class="about_text-description">
+                Mumblecore hexagon kombucha, pitchfork four 
+                loko raclette intelligentsia
+                master cleanse. Vinyl XOXO lumbersexual
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <h1 class="title has-text-centered about_text-title">Tools</h1>
+            <img src="assets/images/husky.jpg" alt="tools" width="250px" height="250px">
+            <div class="has-text-centered about_text-description">
+              <p class="about_text-description">
+                Mumblecore hexagon kombucha, pitchfork four 
+                loko raclette intelligentsia
+                master cleanse. Vinyl XOXO lumbersexual
+              </p>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <h1 class="title has-text-centered">Code</h1>
-          <img src="assets/images/husky.jpg" alt="code" width="350px" height="350px">
-          <div class="has-text-centered about_text-description">
-            <p>
-              Mumblecore hexagon kombucha, pitchfork four 
-              loko raclette intelligentsia
-              master cleanse. Vinyl XOXO lumbersexual
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <h1 class="title has-text-centered">Tools</h1>
-          <img src="assets/images/husky.jpg" alt="tools" width="350px" height="350px">
-          <div class="has-text-centered about_text-description">
-            <p>
-              Mumblecore hexagon kombucha, pitchfork four 
-              loko raclette intelligentsia
-              master cleanse. Vinyl XOXO lumbersexual
-            </p>
+
+      </div>
+    </section>
+
+    
+  <!-- Portfolio section -->
+    <section class="section portfolio is-medium" id="portfolio">
+      <div class="container projects-section">
+        <h1 class="title projects-section_title">Projects</h1>
+        <div class="columns">
+          <div class="column">
+            <a href="https://diercksjohn.github.io/travel-site/">
+              <img src="assets/images/clear-view-escapes.jpg" alt="clear-view-escapes" width="400px" height="400px">
+            </a>
+            </div>
+          <div class="column">
+            <h2 class="subtitle projects-section_description">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            </h2>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  
-<!-- Portfolio section -->
-  <section class="section portfolio is-large" id="portfolio">
-    <div class="container projects-section">
-      <h1 class="title">Projects</h1>
-      <img src="assets/images/clear-view-escapes.jpg" alt="clear-view-escapes" width="350px" height="350px">
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+  </div>
   <script type="text/javascript" src="/assets/scripts/App.js"></script>
   <script type='text/javascript'>
 

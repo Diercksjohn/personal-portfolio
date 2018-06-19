@@ -1,0 +1,15 @@
+
+// center a block level element without having to worry about top or bottom margin
+@mixin push--auto{
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//anytime using ::after and ::before
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}

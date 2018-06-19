@@ -11,18 +11,61 @@ img {
   text-align: center; }
 
 .projects-section {
-  text-align: center; }
-
-#portfolio {
+  text-align: center;
   border: solid black; }
 
-#about {
+.about {
   border: solid black; }
+  .about .about_text-title {
+    font-family: 'Raleway';
+    margin: 50px; }
+  .about .about_text-description {
+    padding: 30px 0 30px 0;
+    font-family: 'roboto'; }
 
-.about .about_text-title {
-  color: green; }
-.about .about_text-description {
-  color: blue;
-  padding: 30px 0 30px 0; }
+.has-bg-img {
+  background: url("../images/laptop.jpg") center center;
+  background-size: cover; }
+
+.navbar_custom {
+  width: 100%;
+  border: solid black;
+  background-color: white; }
+  .navbar_custom .navbar_custom_about {
+    font-family: "roboto";
+    font-weight: 200;
+    font-size: 1rem;
+    margin-right: 80px;
+    -webkit-transition: font-size 0.5s;
+    -ms-transition: font-size 0.5s;
+    transition: font-size 0.5s; }
+  .navbar_custom .navbar_custom_about:hover {
+    background: none;
+    color: black;
+    font-size: 1.2rem; }
+  .navbar_custom .navbar_custom_portfolio {
+    font-family: "roboto";
+    font-weight: 200;
+    font-size: 1rem;
+    margin-right: 80px;
+    -webkit-transition: font-size 0.5s;
+    -ms-transition: font-size 0.5s;
+    transition: font-size 0.5s; }
+  .navbar_custom .navbar_custom_portfolio:hover {
+    background: none;
+    color: black;
+    font-size: 1.2rem; }
+  .navbar_custom .navbar_custom_contact {
+    font-family: "roboto";
+    font-weight: 200;
+    font-size: 1rem;
+    margin-right: 80px;
+    -webkit-transition: font-size 0.5s;
+    -ms-transition: font-size 0.5s;
+    transition: font-size 0.5s; }
+  .navbar_custom .navbar_custom_contact:hover {
+    background: none;
+    color: black;
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=styles.css.map */

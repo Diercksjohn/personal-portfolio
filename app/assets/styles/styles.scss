@@ -1,4 +1,10 @@
 @import "base/_global";
+@import "mixins/_navigation";
+@import "mixins/_media_queries";
+@import "mixins/_general";
+@import "modules/_variables";
 @import "modules/_projects_section";
 @import "modules/_about_section";
+@import "modules/_hero-bg-img";
+@import "modules/_nav";
 @import "includes/_mystyles.scss";

@@ -1,15 +1,13 @@
-#about{
-    border: solid black;
-}
-
 .about{
+    border: solid black;
 
     .about_text-title{
-        color: green;
+        font-family: 'Raleway';
+        margin: 50px;
     }
 
     .about_text-description{
-        color: blue;
         padding: 30px 0 30px 0;
+        font-family: 'roboto';
     }
 }

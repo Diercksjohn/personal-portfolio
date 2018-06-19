@@ -1,0 +1,59 @@
+
+//  regular navigation bar
+//  gradient when at the top of the page
+//  scroll to half way down and menu shrinks becomes regular size when back at top 
+//  highlight or underline the page you are on
+//  add some top margin
+
+
+
+
+
+.navbar_custom{
+    width: 100%;
+    border: solid black;
+    background-color: white;    
+
+    .navbar_custom_about{
+        font-family: $font_family;
+        font-weight: $weight;
+        font-size: $font_start;
+        margin-right: $margin_right;
+        @include transition(font-size .5s);
+    }
+
+    .navbar_custom_about:hover{
+        background: $background;
+        color: $color;
+        font-size: $font_end;
+    }
+
+    .navbar_custom_portfolio{
+        font-family: $font_family;
+        font-weight: $weight;
+        font-size: $font_start;
+        margin-right: $margin_right;
+        @include transition(font-size .5s);
+    }
+
+    .navbar_custom_portfolio:hover{
+        background: $background;
+        color: $color;
+        font-size: $font_end;
+    }
+
+    .navbar_custom_contact{
+        font-family: $font_family;
+        font-weight: $weight;
+        font-size: $font_start;
+        margin-right: $margin_right;
+        @include transition(font-size .5s);
+    }
+
+    .navbar_custom_contact:hover{
+        background: $background;
+        color: $color;
+        font-size: $font_end;
+    }
+
+}
