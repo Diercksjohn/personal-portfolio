@@ -3,7 +3,6 @@
 //  gradient when at the top of the page
 //  scroll to half way down and menu shrinks becomes regular size when back at top 
 //  highlight or underline the page you are on
-//  add some top margin
 
 
 
@@ -11,14 +10,18 @@
 
 .navbar_custom{
     width: 100%;
-    border: solid black;
-    background-color: white;    
+    padding-top: 5px;  
+    height: $navBar-height;
+    top: 0;
+    background-color: $color-primary-dark;
+    border-bottom: 2px solid $color-accent;
 
     .navbar_custom_about{
         font-family: $font_family;
         font-weight: $weight;
         font-size: $font_start;
         margin-right: $margin_right;
+        color: snow;
         @include transition(font-size .5s);
     }
 
@@ -33,6 +36,7 @@
         font-weight: $weight;
         font-size: $font_start;
         margin-right: $margin_right;
+        color: snow;
         @include transition(font-size .5s);
     }
 
@@ -47,6 +51,7 @@
         font-weight: $weight;
         font-size: $font_start;
         margin-right: $margin_right;
+        color: snow;
         @include transition(font-size .5s);
     }
 
@@ -57,3 +62,35 @@
     }
 
 }
+
+// Collapse nav bar on scroll down
+.collapse {
+    animation: collapse .5s ease forwards;
+  }
+  
+  // Open nav bar on scroll up
+  .open {
+    animation: open .5s ease forwards;
+  }
+  
+  @keyframes collapse {
+    from {
+      opacity: 1;
+      top: 0;
+    }
+    to {
+      opacity: 0;
+      top: -$navBar-height;
+    }
+  }
+  
+  @keyframes open {
+    from {
+      opacity: 0;
+      top: -$navBar-height;
+    }
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }

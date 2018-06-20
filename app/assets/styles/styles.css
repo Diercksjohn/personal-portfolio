@@ -10,6 +10,10 @@ h2 {
 img {
   text-align: center; }
 
+body {
+  background-color: snow;
+  height: 300vh; }
+
 .projects-section {
   text-align: center;
   border: solid black; }
@@ -29,13 +33,17 @@ img {
 
 .navbar_custom {
   width: 100%;
-  border: solid black;
-  background-color: white; }
+  padding-top: 5px;
+  height: 73px;
+  top: 0;
+  background-color: #303A52;
+  border-bottom: 2px solid #9E579D; }
   .navbar_custom .navbar_custom_about {
     font-family: "roboto";
     font-weight: 200;
     font-size: 1rem;
     margin-right: 80px;
+    color: snow;
     -webkit-transition: font-size 0.5s;
     -ms-transition: font-size 0.5s;
     transition: font-size 0.5s; }
@@ -48,6 +56,7 @@ img {
     font-weight: 200;
     font-size: 1rem;
     margin-right: 80px;
+    color: snow;
     -webkit-transition: font-size 0.5s;
     -ms-transition: font-size 0.5s;
     transition: font-size 0.5s; }
@@ -60,6 +69,7 @@ img {
     font-weight: 200;
     font-size: 1rem;
     margin-right: 80px;
+    color: snow;
     -webkit-transition: font-size 0.5s;
     -ms-transition: font-size 0.5s;
     transition: font-size 0.5s; }
@@ -67,5 +77,26 @@ img {
     background: none;
     color: black;
     font-size: 1.2rem; }
+
+.collapse {
+  animation: collapse .5s ease forwards; }
+
+.open {
+  animation: open .5s ease forwards; }
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    top: 0; }
+  to {
+    opacity: 0;
+    top: -73px; } }
+@keyframes open {
+  from {
+    opacity: 0;
+    top: -73px; }
+  to {
+    opacity: 1;
+    top: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

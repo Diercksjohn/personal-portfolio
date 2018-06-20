@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href=".././node_modules/bulma/css/bulma.css">
-  <script type='text/javascript' src=".././node_modules/jquery/dist/jquery.js"></script>
+  <script type='text/javascript' src="../node_modules/jquery/dist/jquery.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,19 +22,21 @@
 
 <body>
 
-  <!-- Hamburger menu -->
-  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-  </a>
 
+  
     <!-- beginning of start page and hero image section -->
     <section class="hero is-large has-bg-img"> 
 
       <!-- start of navigation top right -->
-      <nav class="navbar is-fixed-top">
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
         <div class="navbar-menu navbar-end navbar_custom" id="navMenu">
+        <!-- navbar-start, navbar-end... -->
           <a  href="#about" class="navbar-item navbar_custom_about" >
             About
           </a>
@@ -132,6 +134,95 @@
       </div>
     </section>
 
+  <!-- Contact form section -->
+    <section id="contact">
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">This username is available</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-text">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
@@ -154,8 +245,8 @@
       });
   });
 
-  //Javascript Navagation from Bulma
-    document.addEventListener('DOMContentLoaded', function () {
+   //Javascript Navagation from Bulma
+   document.addEventListener('DOMContentLoaded', function () {
 
       // Get all "navbar-burger" elements
       var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -179,8 +270,7 @@
         });
       }
 
-    });
-
+  });
 
   </script>
 </body>
