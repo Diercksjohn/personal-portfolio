@@ -1,8 +1,12 @@
+/*
 
-//  regular navigation bar
-//  gradient when at the top of the page
-//  scroll to half way down and menu shrinks becomes regular size when back at top 
-//  highlight or underline the page you are on
+  mobile navigation
+    -fixed to top
+    -when clicked is the one third height and width of the container
+    -background color is darker with a little opacity
+    -text underlined and change color transition when hovered
+
+*/
 
 .navbar_custom{
     width: 100%;
