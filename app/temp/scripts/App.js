@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _Navigation = __webpack_require__(/*! ./modules/Navigation */ \"./app/assets/scripts/modules/Navigation.js\");\n\nvar _Navigation2 = _interopRequireDefault(_Navigation);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar navigation = new _Navigation2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _Navigation = __webpack_require__(/*! ./modules/Navigation */ \"./app/assets/scripts/modules/Navigation.js\");\n\nvar _Navigation2 = _interopRequireDefault(_Navigation);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquer
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Navigation = function Navigation() {\n    _classCallCheck(this, Navigation);\n};\n\nexports.default = Navigation;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Navigation.js?");
+eval("\n\n// Initial scroll position\nvar scrollState = 0;\n\n// Store navbar classes\nvar navClasses = document.getElementById('navBar').classList;\n\n// returns current scroll position\nvar scrollTop = function scrollTop() {\n  return window.scrollY;\n};\n\n// Primary scroll event function\nvar scrollDetect = function scrollDetect(home, down, up) {\n  // Current scroll position\n  var currentScroll = scrollTop();\n  if (scrollTop() === 0) {\n    home();\n  } else if (currentScroll > scrollState) {\n    down();\n  } else {\n    up();\n  }\n  // Set previous scroll position\n  scrollState = scrollTop();\n};\n\nfunction homeAction() {\n  console.log(\"home\");\n}\n\nfunction downAction() {\n  navClasses.remove('open');\n  navClasses.add('collapse');\n}\n\nfunction upAction() {\n  navClasses.remove('collapse');\n  navClasses.add('open');\n}\n\nwindow.addEventListener(\"scroll\", function () {\n  scrollDetect(homeAction, downAction, upAction);\n});\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Navigation.js?");
 
 /***/ }),
 

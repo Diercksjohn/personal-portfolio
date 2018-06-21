@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href=".././node_modules/bulma/css/bulma.css">
   <script type='text/javascript' src="../node_modules/jquery/dist/jquery.js"></script>
+  <script type='text/javascript' src="../node_modules/smoothscroll/smoothscroll.min.js"></script>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -28,7 +30,7 @@
     <section class="hero is-large has-bg-img"> 
 
       <!-- start of navigation top right -->
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navBar">
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -236,9 +238,10 @@
     </footer>
 
   </div>
-  <script type="text/javascript" src="/assets/scripts/App.js"></script>
-  <script type='text/javascript'>
+  <script src="./temp/scripts/App.js"></script>
 
+  <script type='text/javascript'>
+  
   $(document).ready(function(){
       $("p").click(function(){
           $(this).hide();
