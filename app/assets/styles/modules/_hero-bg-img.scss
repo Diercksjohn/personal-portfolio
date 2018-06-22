@@ -1,13 +1,42 @@
 /*
 
-    hero image
-    -make the greeting legable
-    -maybe make typed out or variation
-    -possibly blur image a bit
+    use padding to move over to the left just a little
 
 */
 
-.has-bg-img{
-    background: url('../images/laptop.jpg')center center;
-    background-size:cover;
+.bg_custom{
+
+    background-color: $color-primary-dark;
+    height: 50%;
+
+    .hero_custom{
+
+        .hero_custom_container{
+
+            
+            padding: 50px 0 50px 0;
+            
+
+            .hero_custom_container_title{
+
+                /*
+                    add some font weight
+                    
+                */
+                color: white;
+
+            }
+
+            .hero_custom_container_subtitle{
+                
+                /*
+                    try underline
+                    
+                */
+                color: $color-accent;
+
+            }
+        }
+
+    }
 }

@@ -30,12 +30,7 @@
 
     .navbar_custom_about:hover{
         background: $background;
-        color: $color;
-    }
-
-    .navbar_custom_about:hover{
-      background: $background;
-      color: $color;
+        color: $color-accent;
     }
 
     .navbar_custom_about:before {
@@ -45,7 +40,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: $color;
+      background-color: $color-accent;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -73,13 +68,8 @@
 
     .navbar_custom_portfolio:hover{
         background: $background;
-        color: $color;
+        color: $color-accent;
     }
-
-    .navbar_custom_portfolio:hover{
-      background: $background;
-      color: $color;
-  }
 
   .navbar_custom_portfolio:before {
     content: "";
@@ -88,7 +78,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $color;
+    background-color: $color-accent;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -116,7 +106,7 @@
 
     .navbar_custom_contact:hover{
         background: $background;
-        color: $color;
+        color: $color-accent;
     }
 
     .navbar_custom_contact:before {
@@ -126,7 +116,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: $color;
+      background-color: $color-accent;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
