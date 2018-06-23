@@ -130,6 +130,12 @@
       transform: scaleX(1);
     }
 
+    @media screen and (max-width: 1087px){
+      .navbar_custom{
+  
+        background-color: $color-primary-dark;
+      }
+    }
 }
 
   // Collapse nav bar on scroll down
@@ -163,3 +169,5 @@
       top: 0;
     }
   }
+
+  

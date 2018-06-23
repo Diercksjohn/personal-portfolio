@@ -50,6 +50,8 @@ body {
 .bg_custom {
   background-color: #303A52;
   height: 50%; }
+  .bg_custom .navbar_custom_mobile {
+    background: #303A52; }
   .bg_custom .hero_custom .hero_custom_container {
     padding: 50px 0 50px 0; }
     .bg_custom .hero_custom .hero_custom_container .hero_custom_container_title {
@@ -177,6 +179,9 @@ body {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
+  @media screen and (max-width: 1087px) {
+    .navbar_custom .navbar_custom {
+      background-color: #303A52; } }
 
 .collapse {
   animation: collapse .5s ease forwards; }

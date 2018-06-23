@@ -9,6 +9,10 @@
     background-color: $color-primary-dark;
     height: 50%;
 
+    .navbar_custom_mobile{
+        background: $color-primary-dark;
+    }
+
     .hero_custom{
 
         .hero_custom_container{
@@ -26,6 +30,9 @@
                 color: white;
 
             }
+
+            
+            
 
             .hero_custom_container_subtitle{
                 
