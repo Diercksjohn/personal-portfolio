@@ -1,212 +1,68 @@
-h1 {
-  font-family: 'Raleway'; }
-
-h2 {
-  font-family: 'Raleway'; }
-
-.about {
-  background-color: white; }
-
-img {
-  text-align: center;
-  border: solid black;
-  margin: 0.4rem 0  0 2.1rem; }
-
-body {
-  background-color: snow;
-  font-family: 'roboto'; }
-
-.projects-section {
-  text-align: center;
-  border: solid black; }
-
 /*
+Error: File to import not found or unreadable: ../sass/utilities/derived-variables.
+        on line 33 of includes/_mystyles.scss
+        from line 11 of styles.scss
 
-    about
-    -make pictures for different skills
-    -use waypoints for fadein when scrolled
-    -make sure that pictures are centered over the text
-    -fill in the white space for the title using margin or padding
-    -change some of the font-size and the weight
-    -type out rough draft of what will go on the about section
-
+Backtrace:
+includes/_mystyles.scss:33
+styles.scss:11
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
-.about .about_text-title {
-  margin: 50px;
-  color: #6b59ef;
-  font-size: 2.5rem;
-  border: solid black; }
-.about .about_text-subtitle {
-  margin: 50px;
-  color: #4e4e63;
-  border: solid black; }
-.about .about_text-description {
-  padding: 30px 0 30px 0;
-  border: solid black; }
-
-img .about_img {
-  border: solid black; }
-
-/*
-
-    use padding to move over to the left just a little
-
-*/
-.bg_custom {
-  background-color: #303A52;
-  height: 50%; }
-  .bg_custom .navbar_custom_mobile {
-    background: #303A52; }
-  .bg_custom .hero_custom .hero_custom_container {
-    padding: 50px 0 50px 0; }
-    .bg_custom .hero_custom .hero_custom_container .hero_custom_container_title {
-      /*
-          add some font weight
-          
-      */
-      color: white; }
-    .bg_custom .hero_custom .hero_custom_container .hero_custom_container_subtitle {
-      /*
-          try underline
-          
-      */
-      color: #6b59ef; }
-
-/*
-
-  mobile navigation
-    -fixed to top
-    -when clicked is the one third height and width of the container
-    -background color is darker with a little opacity
-    -text underlined and change color transition when hovered
-
-*/
-.navbar_custom {
-  width: 100%;
-  padding-top: 5px;
-  height: 73px;
-  top: 0;
-  background-color: #303A52;
-  border-bottom: 2px solid #6b59ef; }
-  .navbar_custom .navbar_custom_about {
-    font-family: "roboto";
-    font-weight: 400;
-    font-size: 1rem;
-    margin: 20px 80px 20px 0;
-    position: relative;
-    text-decoration: none;
-    padding: 0 !important;
-    color: snow;
-    -webkit-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    transition: color 0.5s; }
-  .navbar_custom .navbar_custom_about:hover {
-    background: none;
-    color: #6b59ef; }
-  .navbar_custom .navbar_custom_about:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #6b59ef;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-  .navbar_custom .navbar_custom_about:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); }
-  .navbar_custom .navbar_custom_portfolio {
-    font-family: "roboto";
-    font-weight: 400;
-    font-size: 1rem;
-    margin: 20px 80px 20px 0;
-    position: relative;
-    text-decoration: none;
-    padding: 0 !important;
-    color: snow;
-    -webkit-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    transition: color 0.5s; }
-  .navbar_custom .navbar_custom_portfolio:hover {
-    background: none;
-    color: #6b59ef; }
-  .navbar_custom .navbar_custom_portfolio:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #6b59ef;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-  .navbar_custom .navbar_custom_portfolio:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); }
-  .navbar_custom .navbar_custom_contact {
-    font-family: "roboto";
-    font-weight: 400;
-    font-size: 1rem;
-    position: relative;
-    text-decoration: none;
-    padding: 0 !important;
-    margin: 20px 80px 20px 0;
-    color: snow;
-    -webkit-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    transition: color 0.5s; }
-  .navbar_custom .navbar_custom_contact:hover {
-    background: none;
-    color: #6b59ef; }
-  .navbar_custom .navbar_custom_contact:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #6b59ef;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-  .navbar_custom .navbar_custom_contact:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); }
-  @media screen and (max-width: 1087px) {
-    .navbar_custom .navbar_custom {
-      background-color: #303A52; } }
-
-.collapse {
-  animation: collapse .5s ease forwards; }
-
-.open {
-  animation: open .5s ease forwards; }
-
-@keyframes collapse {
-  from {
-    opacity: 1;
-    top: 0; }
-  to {
-    opacity: 0;
-    top: -73px; } }
-@keyframes open {
-  from {
-    opacity: 0;
-    top: -73px; }
-  to {
-    opacity: 1;
-    top: 0; } }
-
-/*# sourceMappingURL=styles.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../sass/utilities/derived-variables.\A         on line 33 of includes/_mystyles.scss\A         from line 11 of styles.scss"; }

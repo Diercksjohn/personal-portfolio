@@ -19,3 +19,14 @@ $breakpoints: (
         }
     }
 }
+
+@media screen and (min-width: 1088px){
+    #about {
+        padding: 5rem 1.5rem;
+    }
+
+    #portfolio {
+        padding: 1rem 1.5rem;
+        margin-bottom: 9rem;
+    }
+}

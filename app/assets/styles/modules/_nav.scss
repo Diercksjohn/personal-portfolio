@@ -130,14 +130,43 @@
       transform: scaleX(1);
     }
 
-    @media screen and (max-width: 1087px){
-      .navbar_custom{
-  
-        background-color: $color-primary-dark;
-      }
-    }
 }
 
+
+//mobile need to make all of the other areas for the navigation ready for mobile
+#navBar {
+  background: $color-primary-dark;
+  height: 100%;
+  position: fixed;
+
+}
+
+#navMenu{
+  overflow: visible;
+  background: $color-primary-dark;
+  
+
+  // .navbar_divider_custom{
+  //   color:white;
+  // }
+
+  .navbar_item_custom{
+    text-align: center;
+    
+  }
+
+  .navbar_custom_about{
+
+  }
+  
+  .navbar_custom_portfolio{
+    
+  }
+
+  .navbar_custom_contact{
+    
+  }
+}
   // Collapse nav bar on scroll down
   .collapse {
     animation: collapse .5s ease forwards;
